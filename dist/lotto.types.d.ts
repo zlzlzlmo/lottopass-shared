@@ -8,7 +8,7 @@ interface PrizeStatistics {
     winners: number;
     tiers: PrizeTier[];
 }
-interface LottoDraw {
+export interface LottoDraw {
     id: number;
     date: string;
     winningNumbers: number[];
