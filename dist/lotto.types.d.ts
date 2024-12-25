@@ -1,9 +1,9 @@
-interface PrizeTier {
+export interface PrizeTier {
     rank: number;
     winners: number;
     prize: number;
 }
-interface PrizeStatistics {
+export interface PrizeStatistics {
     totalPrize: number;
     winners: number;
     tiers: PrizeTier[];
@@ -24,4 +24,3 @@ export interface ErrorResponse {
     message: string;
 }
 export type FindAllResponse = SuccessResponse | ErrorResponse;
-export {};

@@ -1,10 +1,10 @@
-interface PrizeTier {
+export interface PrizeTier {
   rank: number;
   winners: number;
   prize: number;
 }
 
-interface PrizeStatistics {
+export interface PrizeStatistics {
   totalPrize: number;
   winners: number;
   tiers: PrizeTier[];
