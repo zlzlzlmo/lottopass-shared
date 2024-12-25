@@ -1,12 +1,11 @@
 {
-    "compilerOptions": {
-      "outDir": "dist",
-      "declaration": true,
-      "emitDeclarationOnly": true,
-      "moduleResolution": "node",
-      "target": "ES6",
-      "strict": true
-    },
-    "include": ["src/**/*"]
-  }
-  
+  "compilerOptions": {
+    "outDir": "dist",
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "moduleResolution": "node",
+    "target": "ES6",
+    "strict": true
+  },
+  "include": ["src/**/*"]
+}
