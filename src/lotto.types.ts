@@ -17,9 +17,14 @@ interface LottoDraw {
   bonusNumber: number;
   prizeStatistics: PrizeStatistics;
 }
-
-export interface FindAllResponse {
-  status: "success" | "error";
+export interface SuccessResponse {
+  status: "success";
   data: LottoDraw[];
-  message?: string;
 }
+
+export interface ErrorResponse {
+  status: "error";
+  message: string;
+}
+
+export type FindAllResponse = SuccessResponse | ErrorResponse;
