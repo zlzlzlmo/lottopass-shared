@@ -1,19 +1,14 @@
-export interface PrizeTier {
-    rank: number;
-    winners: number;
-    prize: number;
-}
-export interface PrizeStatistics {
-    totalPrize: number;
-    winners: number;
-    tiers: PrizeTier[];
-}
 export interface LottoDraw {
-    id: number;
+    drawNumber: number;
     date: string;
     winningNumbers: number[];
     bonusNumber: number;
-    prizeStatistics: PrizeStatistics;
+    prizeStatistics: {
+        totalPrize: number;
+        firstWinAmount: number;
+        firstAccumAmount: number;
+        firstPrizeWinnerCount: number;
+    };
 }
 export interface SuccessResponse {
     status: "success";
