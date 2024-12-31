@@ -13,9 +13,9 @@ export interface LottoDraw {
   };
 }
 
-export interface SuccessResponse {
+export interface SuccessResponse<T> {
   status: "success";
-  data: LottoDraw[];
+  data: T;
 }
 
 export interface ErrorResponse {
@@ -23,4 +23,4 @@ export interface ErrorResponse {
   message: string;
 }
 
-export type FindAllResponse = SuccessResponse | ErrorResponse;
+export type FindAllResponse<T> = SuccessResponse<T> | ErrorResponse;
