@@ -10,12 +10,12 @@ export interface LottoDraw {
         firstPrizeWinnerCount: number;
     };
 }
-export interface SuccessResponse {
+export interface SuccessResponse<T> {
     status: "success";
-    data: LottoDraw[];
+    data: T;
 }
 export interface ErrorResponse {
     status: "error";
     message: string;
 }
-export type FindAllResponse = SuccessResponse | ErrorResponse;
+export type FindAllResponse<T> = SuccessResponse<T> | ErrorResponse;
