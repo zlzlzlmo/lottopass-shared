@@ -21,7 +21,7 @@ export interface DetailDraw {
   id: number;
   drawNumber: number;
   rank: number;
-  totalPrize: number;
-  winnerCount: number;
-  prizePerWinner: number;
+  totalPrize: number | string;
+  winnerCount: number | string;
+  prizePerWinner: number | string;
 }
