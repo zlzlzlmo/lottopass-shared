@@ -16,3 +16,12 @@ export interface WinningRegion {
   coordinates?: { lat: number; lng: number };
   uniqueIdentifier: string;
 }
+
+export interface DetailDraw {
+  id: number;
+  drawNumber: number;
+  rank: number;
+  totalPrize: number;
+  winnerCount: number;
+  prizePerWinner: number;
+}
