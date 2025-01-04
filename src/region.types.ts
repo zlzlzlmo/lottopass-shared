@@ -25,3 +25,10 @@ export interface DetailDraw {
   winnerCount: number | string;
   prizePerWinner: number | string;
 }
+export interface StoreInfo {
+  fullAddress: string;
+  latitude: number;
+  longitude: number;
+  storeName: string;
+  phone: string | null;
+}
