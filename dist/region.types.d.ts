@@ -18,3 +18,18 @@ export interface WinningRegion {
     };
     uniqueIdentifier: string;
 }
+export interface DetailDraw {
+    id: number;
+    drawNumber: number;
+    rank: number;
+    totalPrize: number | string;
+    winnerCount: number | string;
+    prizePerWinner: number | string;
+}
+export interface StoreInfo {
+    fullAddress: string;
+    latitude: number;
+    longitude: number;
+    storeName: string;
+    phone: string | null;
+}
