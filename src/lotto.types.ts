@@ -21,6 +21,8 @@ export interface SuccessResponse<T> {
 export interface ErrorResponse {
   status: "error";
   message: string;
+  timestamp?: string;
+  path?: string;
 }
 
 export type FindAllResponse<T> = SuccessResponse<T> | ErrorResponse;
