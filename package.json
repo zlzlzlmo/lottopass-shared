@@ -4,9 +4,9 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
+    "generate-barrels": "barrelsby --directory ./src --delete",
     "build": "tsc",
-    "prepare": "npm run build",
-    "deploy": "npm run build && git add . && git commit -m \"Add build output\" && git push origin main"
+    "deploy": "npm run generate-barrels && npm run build && git add . && git commit -m \"Add build output\" && git push origin main"
   },
   "keywords": [],
   "author": "",
